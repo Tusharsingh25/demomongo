@@ -35,7 +35,7 @@ public class infoController {
         repository.save(inf);
         return "Updated data with Id:"+id;
     }
-    @DeleteMapping("/info/{id}")
+    @DeleteMapping("/delete/{id}")
     public String deletedata(@PathVariable int id){
         repository.deleteById(id);
         return "Deleted data with Id:"+id;
